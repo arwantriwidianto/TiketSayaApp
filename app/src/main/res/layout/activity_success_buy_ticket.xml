@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    tools:context=".SuccessRegisterActivity">
+
+    <ImageView
+        android:id="@+id/icon_success"
+        android:layout_width="276dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icon_success_ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/mregular"
+        android:text="selamat menikmati"
+        android:textAlignment="center"
+        android:textColor="@color/black_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_success" />
+
+    <TextView
+        android:textColor="@color/grayPrimary"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:id="@+id/app_subtitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Anda berhasil membeli ticket dan selamat berlibur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
+
+    <Button
+        android:id="@+id/btn_view_ticket"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/mmedium"
+        android:background="@drawable/bg_btn_blue_primary"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="VIEW TICKET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_subtitle" />
+
+    <Button
+        android:id="@+id/btn_my_dashboard"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/bg_btn_white_primary"
+        android:fontFamily="@font/mmedium"
+        android:text="My Dahsboard"
+        android:textColor="@color/grayPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_view_ticket" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
